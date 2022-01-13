@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pretty json for Loopback SwaggerUI api specs",
+  "version": "0.1.0",
+  "description": "Pretty json for Loopback SwaggerUI api specs",
+
+  "content_scripts": [
+    {
+      "css": ["dist/jsoneditor.min.css", "styles.css"],
+      "js": ["dist/jsoneditor.min.js", "content.js"],
+      "matches": ["http://*/explorer/", "https://*/explorer/"]
+    }
+  ],
+
+  "permissions": ["activeTab"]
+}
